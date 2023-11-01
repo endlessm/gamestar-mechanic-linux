@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./theme.css">
+    <title>Gamestar Mechanic</title>
+</head>
+<body>
+<div id="wrapper">
+    <div id="nav-body-tabs"></div>
+    <div id="nav-body-ctrls"></div>
+    <div id="nav-body-view-wrapper">
+        <div id="nav-body-views"></div>
+    </div>
+</div>
+<script>
+  const {ipcRenderer} = require('electron');
+  const {isWhiteListed} = require('../utils/whiteListDomains');
+
+  const defaultOptions = {
+    readonlyUrl: true,
+    contextMenu: false,
+    webviewAttributes: {plugins: true},
+  };
+
+  const enav = new (require('electron-navigation'))({
+    showUrlBar: false,
+    newTabParams: [
+      "https://gamestarmechanic.com",
+      defaultOptions,
+    ],
+    newTabCallback: (url, options) => isWhiteListed(url) && Object.assign(options, defaultOptions)
+  });
+
+  ipcRenderer.on('newTab', (event, {url, readonlyUrl = true}) => {
+    enav.newTab(url, {
+      ...defaultOptions,
+      readonlyUrl,
+    });
+  })
+</script>
+</body>
+</html>

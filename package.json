@@ -1,0 +1,106 @@
+{
+  "name": "gamestarmechanic",
+  "productName": "Gamestar Mechanic",
+  "version": "1.2.1",
+  "description": "Gamestar Mechanic uses fun, game-based quests and courses to help you learn game design and make your own video games!",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\"",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --mac --x64"
+  },
+  "keywords": [],
+  "author": {
+    "name": "E-Line Media",
+    "email": "press@elinemedia.com"
+  },
+  "license": "MIT",
+  "build": {
+    "appId": "com.gamestarmechanic",
+    "productName": "Gamestar Mechanic",
+    "files": [
+      "src/**/*",
+      "package.json",
+      "package-lock.json"
+    ],
+    "asar": false,
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true
+    },
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.education",
+      "icon": "build/icon.icns",
+      "hardenedRuntime": true,
+      "gatekeeperAssess": false,
+      "type": "distribution",
+      "entitlements": "build/entitlements.mac.plist",
+      "entitlementsInherit": "build/entitlements.mac.plist"
+    }
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "name": "gamestarmechanic",
+        "appBundleId": "com.elinemedia.gamestarmechanic",
+        "platform": "all",
+        "appCopyright": "Copyright (C) 2021 Gamestar Mechanic",
+        "icon": "res/icon/icon",
+        "protocols": {
+          "name": "gamestarmechanic-deep-linking",
+          "schemes": [
+            "gsm"
+          ]
+        }
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "gamestarmechanic"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin",
+            "linux"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {
+            "name": "gamestarmechanic"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "electron-json-storage": "^4.3.0",
+    "electron-log": "^4.3.0",
+    "electron-navigation": "^1.5.8",
+    "electron-prompt": "^1.6.0",
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.54",
+    "@electron-forge/maker-deb": "^6.0.0-beta.54",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.54",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
+    "@electron-forge/maker-zip": "^6.0.0-beta.54",
+    "electron": "10.1.5",
+    "electron-builder": "^22.9.1",
+    "electron-notarize": "^1.0.0"
+  }
+}
