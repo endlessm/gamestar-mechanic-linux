@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Gamestar Mechanic
+Exec=gamestarmechanic %u
+Icon=gamestarmechanic
+Terminal=false
+Type=Application
+StartupWMClass=GamestarMechanic
+Categories=Game;Education;
+StartupNotify=true
+
