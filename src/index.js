@@ -56,7 +56,7 @@ const createWindow = () => {
     },
   });
 
-  mainWindow.loadURL(`file:///${__dirname}/app/index.html`);
+  mainWindow.loadURL('https://gamestarmechanic.com');
 
   const loadCookies = async (error, cookie) => {
     if (error) { console.error(error); }

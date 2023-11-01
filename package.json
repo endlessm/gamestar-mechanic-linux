@@ -11,7 +11,7 @@
     "publish": "electron-forge publish",
     "lint": "echo \"No linting configured\"",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder --mac --x64"
+    "dist": "electron-builder --linux --x64"
   },
   "keywords": [],
   "author": {
@@ -89,7 +89,6 @@
   "dependencies": {
     "electron-json-storage": "^4.3.0",
     "electron-log": "^4.3.0",
-    "electron-navigation": "^6.6.6",
     "electron-prompt": "^1.6.0",
     "electron-squirrel-startup": "^1.0.0"
   },
