@@ -89,7 +89,7 @@
   "dependencies": {
     "electron-json-storage": "^4.3.0",
     "electron-log": "^4.3.0",
-    "electron-navigation": "^1.5.8",
+    "electron-navigation": "^6.6.6",
     "electron-prompt": "^1.6.0",
     "electron-squirrel-startup": "^1.0.0"
   },
