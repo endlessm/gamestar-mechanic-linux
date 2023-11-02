@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.gamestarmechanic.gamestarmechanic</id>
+
+  <name>Gamestar Mechanic</name>
+  <developer_name>Endless Studios</developer_name>
+  <summary>Learn to design video games</summary>
+
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <url type="homepage">https://gamestarmechanic.com/</url>
+  <url type="bugtracker">https://github.com/endlessm/gamestar-mechanic-linux/issues</url>
+
+  <recommends>
+    <display_length compare="ge">1200</display_length>
+  </recommends>
+
+  <description>
+    <p>
+      Gamestar Mechanic uses fun, game-based quests and courses to help you learn game design and make your own video games!
+    </p>
+  </description>
+
+  <screenshots>
+    <screenshot type="default">
+      <caption>The Gamestar Mechanic app can access all of the content at gamestarmechanic.com</caption>
+      <image type="source" width="2456" height="1482">https://raw.githubusercontent.com/endlessm/gamestar-mechanic-linux/main/res/screenshots/Screenshot-1.png</image>
+    </screenshot>
+    <screenshot type="default">
+      <caption>Go on Quests to power up your game design skills and earn items to make your own games</caption>
+      <image type="source" width="2456" height="1482">https://raw.githubusercontent.com/endlessm/gamestar-mechanic-linux/main/res/screenshots/Screenshot-2.png</image>
+    </screenshot>
+    <screenshot type="default">
+      <caption>Make original games with a powerful, easy-to-use design tool and a library of hundreds of sprites</caption>
+      <image type="source" width="2456" height="1482">https://raw.githubusercontent.com/endlessm/gamestar-mechanic-linux/main/res/screenshots/Screenshot-3.png</image>
+    </screenshot>
+    <screenshot type="default">
+      <caption>Publish your games and connect with a community of over 250,000 designers</caption>
+      <image type="source" width="2456" height="1482">https://raw.githubusercontent.com/endlessm/gamestar-mechanic-linux/main/res/screenshots/Screenshot-4.png</image>
+    </screenshot>
+  </screenshots>
+
+  <content_rating type="oars-1.1">
+    <content_attribute id="violence-cartoon">mild</content_attribute>
+    <content_attribute id="violence-fantasy">mild</content_attribute>
+    <content_attribute id="social-chat">moderate</content_attribute>
+  </content_rating>
+
+  <launchable type="desktop-id">com.gamestarmechanic.gamestarmechanic.desktop</launchable>
+
+  <releases>
+    <release version="0.1" date="2023-11-02" type="stable" />
+  </releases>
+</component>

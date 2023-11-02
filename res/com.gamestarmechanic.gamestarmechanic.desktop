@@ -1,10 +1,10 @@
 [Desktop Entry]
 Name=Gamestar Mechanic
 Exec=gamestarmechanic %u
-Icon=gamestarmechanic
+Icon=com.gamestarmechanic.gamestarmechanic
 Terminal=false
 Type=Application
-StartupWMClass=GamestarMechanic
+StartupWMClass=Gamestar Mechanic
 Categories=Game;Education;
 StartupNotify=true
 
