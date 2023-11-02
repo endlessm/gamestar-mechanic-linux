@@ -15,23 +15,25 @@ if (require('electron-squirrel-startup')) {
   app.quit();
 }
 
-let pluginName;
+let pluginsDir;
+pluginsDir = process.env.GAMESTAR_PLUGINS_PATH || path.join(__dirname, 'plugins');
 
+let flashPluginName;
 switch (process.platform) {
   case 'win32':
-    pluginName = 'plugins/pepflashplayer.dll';
+    flashPluginName = 'pepflashplayer.dll';
     break;
   case 'darwin':
-    pluginName = 'plugins/PepperFlashPlayer.plugin';
+    flashPluginName = 'PepperFlashPlayer.plugin';
     break;
   case 'linux':
-    pluginName = 'plugins/libflashplayer.so';
+    flashPluginName = 'libpepflashplayer.so';
     break;
 }
 
 app.commandLine.appendSwitch(
   'ppapi-flash-path',
-  path.join(__dirname, pluginName),
+  path.join(pluginsDir, flashPluginName),
 );
 app.commandLine.appendSwitch('no-sandbox');
 app.commandLine.appendSwitch('disable-site-isolation-trials');
