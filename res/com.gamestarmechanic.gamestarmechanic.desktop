@@ -4,6 +4,7 @@ Exec=gamestarmechanic %u
 Icon=com.gamestarmechanic.gamestarmechanic
 Terminal=false
 Type=Application
+MimeType=x-scheme-handler/gsm
 StartupWMClass=Gamestar Mechanic
 Categories=Game;Education;
 StartupNotify=true
