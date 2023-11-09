@@ -10,7 +10,7 @@ site's Flash content.
 
 The best way to try the Gamestar Mechanic app is to install it from Flathub:
 
-<a href="https://flathub.org/apps/details/com.gamestarmechanic.app">
+<a href="https://flathub.org/apps/details/com.gamestarmechanic.gamestarmechanic">
 <img
     src="https://flathub.org/assets/badges/flathub-badge-i-en.png"
     alt="Download Gamestar Mechanic on Flathub"
