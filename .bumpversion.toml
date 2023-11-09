@@ -9,8 +9,9 @@ search = "\"version\": \"{current_version}\""
 replace = "\"version\": \"{new_version}\""
 
 [[tool.bumpversion.files]]
-filename = "res/com.gamestarmechanic.app.metainfo.xml"
+filename = "res/com.gamestarmechanic.gamestarmechanic.metainfo.xml"
 # This crude regex will break if the release tag contains any "/" or ">" characters.
-search = "<release\\s([^>]+\\s)*version=\"{current_version}\\+next\"[^\\/>]*"
+regex = true
+search = "<release\\s[^>]*\\s?version=\"{current_version}\\+next\"[^/>]*"
 replace = "<release version=\"{new_version}\" date=\"{now:%Y-%m-%d}\" type=\"stable\""
 
