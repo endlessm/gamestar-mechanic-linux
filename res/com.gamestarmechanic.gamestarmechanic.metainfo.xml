@@ -49,7 +49,26 @@
   <launchable type="desktop-id">com.gamestarmechanic.gamestarmechanic.desktop</launchable>
 
   <releases>
-    <release version="1.3.1" date="2023-11-09" type="stable"/>
-    <release version="1.3.0" date="2023-11-07" type="stable"/>
+    <release version="1.3.1+next" date="2023-11-10" type="development">
+      <description>
+        <ul>
+          <li>The menu bar has been removed.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.1" date="2023-11-09" type="stable">
+      <description>
+        <ul>
+          <li>Change project license metadata to better reflect Gamestar Mechanic as a whole.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.0" date="2023-11-07" type="stable">
+      <description>
+        <ul>
+          <li>Initial release of the Gamestar Mechanic app for Linux.</li>
+        </ul>
+      </description>
+    </release>
   </releases>
 </component>
