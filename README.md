@@ -36,7 +36,7 @@ The resulting files will be located in the `dist` directory.
 
 #### Managing release notes
 
-While making changes for an upcoming release, please update [org.endlessos.Key.metainfo.xml.in.in](data/metainfo/org.endlessos.Key.metainfo.xml.in.in)
+While making changes for an upcoming release, please update [com.gamestarmechanic.gamestarmechanic.metainfo.xml](res/com.gamestarmechanic.gamestarmechanic.metainfo.xml)
 with information about those changes. In the `<releases>` section, there should
 always be a release entry with `version` set to the previous version followed by
 `+next`, like this:
